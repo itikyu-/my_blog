@@ -23,7 +23,7 @@
       </div> 
       <aside id="sidebar">
 	<section>
-          <h3 >プロフィール</h3> 
+          <h3 >Profile</h3> 
 	<p>
 	name: itikyu<br><br>
 	岡山在住の大学院生<br>
@@ -34,7 +34,7 @@
     </p>
 	</section>
     <section>
-      <h2>Recent Articles</h2>
+      <h3>Recent Articles</h3>
       <ul>
         <% blog.articles[0...10].each do |article| %>
           <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
@@ -42,7 +42,7 @@
       </ul>
     </section>
 	<section>
-        <h3 id="tag-list">タグリスト</h3> 
+        <h3 id="tag-list">Tag List</h3> 
       <ul>
         <% blog.tags.each do |tag, articles| %>
           <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li>
@@ -50,7 +50,7 @@
       </ul>
 	</section>
 	<section>
-	<h3>twitter</h3>
+	<h3>Twitter</h3>
 <a class="twitter-timeline" width="180" height="350" href="https://twitter.com/itikyu_" data-widget-id="350547197718319106">@itikyu_ からのツイート</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	</section>
