@@ -1,9 +1,0 @@
----
-title: hook-test
-date: 2014-05-12 21:06 JST
-tags: newtag
----
-
-## post-recieve
-果たしてフックは成功するのかな
-
