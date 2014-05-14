@@ -7,7 +7,7 @@
             <li><a href="<%= tag_path(tag) %>"><%= tag %></a></li>
           <% end %>
         </ul> 
-        <time pubdate="pubdate"><%= current_page.data['date'] %></time>
+        <time pubdate="pubdate"><%= current_page.data['date'].to_time.iso8601 %></time>
     </header>
     <div class="body">
       <%= yield %>
