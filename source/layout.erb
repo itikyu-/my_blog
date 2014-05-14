@@ -64,9 +64,9 @@
        <% else %>
          <a class="after-entry" href="<%= @after %>">Newer</a>
        <% end %>
-     <% end %>　
+     <% end %>
      </div>
-     <div class="before">　 
+     <div class="before"> 
      <% unless @before == nil then %>
        <% if @entry then %>
          <a class="before-entry" href="<%= @before['_id'] %>"><%= @before['title'] %></a>
