@@ -10,3 +10,6 @@ gem "builder", "~> 3.0"
 
 # For execjs
 gem 'therubyracer'
+
+# For summary
+gem 'nokogiri'

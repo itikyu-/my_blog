@@ -24,7 +24,9 @@ per_page: 10
     <div class="body">
   <!-- use article.summary(250) if you have Nokogiri available to show just
        the first 250 characters -->
-      <%= article.body %>
+  <%= article.summary %>
+<%= link_to 'Read more…', article %>
+      <% #= article.body %>
     </div>
     <footer class="entry">
     </footer>
