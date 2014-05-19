@@ -13,3 +13,6 @@ gem 'therubyracer'
 
 # For summary
 gem 'nokogiri'
+
+# For Japanese URI
+gem 'addressable'
