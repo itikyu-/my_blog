@@ -1,18 +1,70 @@
-<% wrap_layout :layout do %>
-<article class="entry">
-    <header class="entry">
-        <h2><%= current_page.data['title'] %></h2>
-        <ul class="tags">
-          <% current_page.tags.each do |tag| %>
+
+      <% wrap_layout :layout do %>
+      
+
+<div id="content">
+  <div id="main-wrapper">
+    <div id="main">
+
+      <article class="entry">
+        <header class="blog">
+          <h2><%= current_page.data['title'] %></h2>
+          <ul class="tags">
+            <% current_page.tags.each do |tag| %>
             <li><a href="<%= tag_path(tag) %>"><%= tag %></a></li>
-          <% end %>
-        </ul> 
-        <time><%= current_page.data['date'].to_time.strftime("%Y-%m-%d %H:%M") %></time>
-    </header>
-    <div class="body">
-      <%= yield %>
+            <% end %>
+          </ul> 
+          <time><%= current_page.data['date'].to_time.strftime("%Y-%m-%d %H:%M") %></time>
+        </header>
+        <div class="body">
+          <%= yield %>
+        </div>
+        <footer class="entry">
+        </footer>
+      </article>
+
     </div>
-    <footer class="entry">
-    </footer>
-</article>
-<% end %>
+  </div>
+
+  <aside id="sidebar">
+    <section>
+      <h2>Recent Articles</h2>
+      <ul>
+        <% blog.articles[0...10].each do |article| %>
+        <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
+        <% end %>
+      </ul>
+    </section>
+	<section>
+      <h2 id="tag-list">Tag List</h2>
+      <ul>
+        <% blog.tags.each do |tag, articles| %>
+        <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li>
+        <% end %>
+      </ul>
+	</section>
+  </aside>
+</div>
+<div id="pagenation">
+  <div class="after">
+    <% unless @after == nil then %>
+    <% if @entry then %>
+    <a class="after-entry" href="<%= @after['_id'] %>"><%= @after['title'] %></a>
+    <% else %>
+    <a class="after-entry" href="<%= @after %>">Newer</a>
+    <% end %>
+    <% end %>
+  </div>
+  <div class="before">
+    <% unless @before == nil then %>
+    <% if @entry then %>
+    <a class="before-entry" href="<%= @before['_id'] %>"><%= @before['title'] %></a>
+    <% else %>
+    <a class="before-entry" href="<%= @before %>">Older</a>
+    <% end %>
+    <% end %>
+  </div>
+  <a href="/">HOME</a>
+</div>
+
+      <% end %>
