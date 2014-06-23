@@ -65,6 +65,11 @@ body {
 	    color: rgb(20,110,110);
         border-bottom: 2px solid #d0d0d0;
         background-color: white;
+        &:after{
+            content: "";
+            clear: both;
+            display: block;
+        }       
 
         h1{
             margin: 5px;
