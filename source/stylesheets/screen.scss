@@ -99,7 +99,7 @@ body {
 // articleのレイアウトツリー
 article.entry{
     border-radius: 0.3em;
-    margin-bottom: 2em;
+    margin-bottom: 6em;
     color: #121212;
 
     header.blog{
@@ -164,6 +164,8 @@ article.entry{
     }
     
     footer{
+        margin-top: 2.5em;
+        
         &:after{
             content: "";
             clear: both;
@@ -172,8 +174,8 @@ article.entry{
 
         a.ReadMore{
             float: right;
-            margin-right: 5%;
-            Background-color: rgb(220,220,220);
+            margin-right: 3em;
+            Background-color: rgb(180,200,200);
             display: inline-block;
             font-size: 1.2em;
             height: 1.8em;
@@ -199,5 +201,5 @@ li a{color: #2f4f4f;}
 
 
 aside ul li {
-    margin: 0.3em 0em;
+    margin: 0.4em 0em;
 }
