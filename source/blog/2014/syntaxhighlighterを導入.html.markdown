@@ -46,11 +46,11 @@ READMORE
 まずは放り込んだファイルたちを読み込む．
 
 <pre class="brush: xml" title="headタグの中">
-  <head>
-    <link rel="stylesheet" href="/stylesheets/syntaxHighlighter/shCoreXxx.css" />
-    <script src="/javascripts/syntaxHighlighter/shCore.js"></script>
-    <script src="/javascripts/syntaxHighlighter/shAutoloader.js"></script>
-  </head>
+  &lt;head&gt;
+    &lt;link rel="stylesheet" href="/stylesheets/syntaxHighlighter/shCoreXxx.css" /&gt;
+    &lt;script src="/javascripts/syntaxHighlighter/shCore.js"&gt;&lt;/script&gt;
+    &lt;script src="/javascripts/syntaxHighlighter/shAutoloader.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
 </pre>
 <small>※Xxx部分はお好みで．</small>
 
@@ -58,7 +58,7 @@ READMORE
 ちゃんと直前に書かないとうまく動かないことがあるかもしれないので注意．
 
 <pre class="brush: javascript" title="syntaxHighlighterの実行">
-  <script>
+  &lt;script&gt;
       SyntaxHighlighter.autoloader
       (
        "bash shell      [自分の環境のパス]/shBrushBash.js",
@@ -69,7 +69,8 @@ READMORE
        "xml             [自分の環境のパス]/shBrushXml.js"
       );
       SyntaxHighlighter.all();
-  </script>
+  &lt;/script&gt;
+  &lt;/body&gt;
 </pre>
 
 自分が必要だった言語用のJSファイルのパスをautoloaderに登録してやる．
