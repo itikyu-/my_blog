@@ -1,8 +1,8 @@
 ---
 title: テスト投稿
 date: 2014-05-13 20:55 JST
-tags: test
-category: 雑記
+tags: 日記
+category: 日記
 ---
 とりあえず、ブログの原型が出来上がったので利用していきたいと思います。
 
