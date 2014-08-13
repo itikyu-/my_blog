@@ -1,0 +1,45 @@
+---
+title: パーティションテーブルのバックアップとリストア
+date: 2014-08-13 12:24 JST
+tags: GNU/Linux
+category: Linux
+---
+
+ストレージのパーティションの設定をテキストファイルとしてバックアップしておいて，コマンド一発でリストアできるようにする方法．
+Linuxを再インストールしたりする際に何度もパーティションを切る作業を行うのは面倒なので少し調べてみた．
+
+ストレージのパーティション規格がGPTかMBRかで利用するコマンドが異なってくるので注意．
+今回は両方の場合の作業を紹介する．
+
+READMORE
+
+バックアップとリストアともにコマンド一発で行うことが可能．
+MBRの場合はsfdiskコマンド，GPTの場合sgdiskコマンドを利用する．
+
+2つのコマンドは使い方が若干異なるので両方を記しておく．
+また，今回の例ではバックアップファイルの名前はpartition_fileで統一している．
+
+
+バックアップ時のコマンドはこちら
+
+<pre class="brush: shell" title="backup.sh">  
+  # for MBR
+  sfdisk -d /dev/sda > partition_file
+
+  # for GPT
+  sgdisk --backup=partition_file /dev/sda
+</pre>
+
+リストアの際はこうします
+
+<pre class="brush: shell" title="restore.sh">  
+  # for MBR
+  sfdisk /dev/sda < partition_file
+
+  # for GPT
+  sgdisk --load-backup=partition_file /dev/sda
+</pre>
+
+余談だが，sgdiskで作成したファイルはバイナリファイルになっている模様．
+
+以上．
