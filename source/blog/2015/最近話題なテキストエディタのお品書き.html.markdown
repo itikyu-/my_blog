@@ -1,0 +1,123 @@
+---
+title: 最近話題なテキストエディタのお品書き
+date: 2015-04-06 12:08 JST
+tags: emacs,LightTable,Atom,Brackets,SublimeText
+---
+
+最近Emacsのバージョンアップをしたらプラグインの互換性の問題で上手く起動しなくなっちゃって手間取ってしまってました．
+Emacsではよくあることだけど，最近中々時間が取れなかった身からするとあまりそういうところに時間を取らせるなとつい思ってしまいます．
+そんな時にバーションアップするなとか言われるともっともなので言い返せれないのですが、新しい物が出ると試さずにいられない性格なので．
+それに、そういう時の復旧経験を通じて知識が身につくものですしね．
+
+などと抗弁しつつも，良い機会なので最近のテキストエディタをちょっと試してみようかなと企てています．
+あまりGUIベッタリなものは好みではないのですが，何か Hackable Editor とか自称しているようなのもあったりするので興味がでてます．
+ネットの情報を元に調べた結果を簡単にまとめて今回記事にしてみます．
+
+今回は以下について調べました．
+
+* Sublime Text 3
+* Atom
+* Brackets
+* Light Table
+
+それでは，以下まとめです。
+
+### Sublime Text 3
+
+<table class="pure-table pure-table-bordered">
+<tbody>
+<tr><td> 最新版リリース日 </td><td> 2015/3/26 (build 3083) </td></tr>
+<tr><td> ライセンス </td><td> Closed Source </td></tr>
+<tr><td> プラグイン作成言語 </td><td> Python3 </td></tr>
+<tr><td> URL </td><td> http://www.sublimetext.com/ </td></tr>
+</tbody>
+</table>
+
+*「Sublime Text はコーディング・マークアップのみならず普段の物書きにも利用できる，洗練されたテキストエディタです．<br>
+そのサクサクな動作と並外れた機能性，驚異的な出来栄えにあなたはきっとSublimeTextを好きになるでしょう」*<br>
+
+本人が申し上げてるように，デフォルト状態でも非常に多くの機能が盛り込まれていて完成度が高いです．
+また，プラグイン作成のために用意されているPythenのAPI．
+細やかな設定変更が可能な点等もアピールポイントの様です．
+
+無料で使えるものと思っていたけど，今はβ版だから無料だよって体のよう．
+Sublime Text2の方は「無料で使えるけど，払えよ常識的に考えて」みたいなスタンス？
+
+有志の方が[Lime Text](http://limetext.org/)なる代替のオープンソース版エディタを作成中のようです．
+こちらはGo-langで鋭意作成中みたいですね．
+
+
+### Atom
+
+<table class="pure-table pure-table-bordered">
+<tbody>
+<tr><td> 最新版リリース日 </td><td> 2015/4/1 (v0.189.0) </td></tr>
+<tr><td> ライセンス </td><td> MIT </td></tr>
+<tr><td> プラグイン作成言語 </td><td> JavaScript </td></tr>
+<tr><td> URL </td><td> https://atom.io/ </td></tr>
+</tbody>
+</table>
+
+*「Github社では前々から欲しかった理想のエディタを作成中です．<br>
+カスタマイズ可能でどんなことでもできます,ただし設定ファイルをいじらずとも初日から生産的に利用することも可能です.<br>
+Atomは先進的で親しみやすくコアな部分までハック可能です.<br>
+あなたがAtomと共に作り上げるものを早く見みたたいです.」*<br>
+
+導入でも触れてたGithub製のHackable Editorさんです．
+Webkitベースのエディタなのが特徴．
+Node.jsも組み込まれているようで，WebkitとNodeのAPIを使ってプラグインを
+作成出来るのが魅力です.
+
+今回紹介している中では一番活発に開発されている模様．
+プラグイン数も既に非常に多いです.
+
+### Brackets
+
+<table class="pure-table pure-table-bordered">
+<tbody>
+<tr><td> 最新版リリース日 </td><td> 2015/02/19 (v1.2) </td></tr>
+<tr><td> ライセンス </td><td> https://github.com/adobe/brackets/blob/master/LICENSE </td></tr>
+<tr><td> プラグイン作成言語 </td><td> Python3 </td></tr>
+<tr><td> URL </td><td> http://brackets.io/ </td></tr>
+</tbody>
+</table>
+
+*「ビジュアルツールとプリプロセッサのサポートに注力したBracketsは,ブラウザ上のデザインを簡単に行うことが可能なテキストエディタです.<br>
+コードを生成することなくPSDファイルからクリーンでミニマルで直線的なCSSを作成可能なCreative Cloud(preview) for Brackets を是非試してみてください.  」*<br>
+
+こちらはAdobeが発表したオープンソースエディタ．
+Web系のフロントエンド開発に注力されているそうです．
+
+Adobeの得意なWebオーサリングな部分がエディタと統合されているのが特徴のようです.
+Dreamweaverとかに近いイメージ何でしょうか?
+
+Adobe製だけあって日本語サポートが今回紹介しているの中で一番優秀らしいです．
+
+### Light Table
+
+<table class="pure-table pure-table-bordered">
+<tbody>
+<tr><td> 最新版リリース日 </td><td> 2014/11/21 (v0.7.2) </td></tr>
+<tr><td> ライセンス </td><td> GPL </td></tr>
+<tr><td> プラグイン作成言語 </td><td> Clojure </td></tr>
+<tr><td> URL </td><td> http://lighttable.com/ </td></tr>
+</tbody>
+</table>
+
+*「次世代コードエディタ」*<br>
+
+公式サイト煽り文句がとてもシンプルですね.
+こちらはよく知らなかったんですが，KickStartで資金集めに成功して開発を行っているエディタのようです．
+
+公式サイトの動画を見てもらうのが一番手っ取り早いかと思うのですが,現在書いているコードの実行結果をいつでも確認しながらプログラミングが可能なのが最大のアピールポイントの様です.
+
+あとClojureで拡張可能というのがEmacsチックで素敵．
+
+
+### 感想
+
+正直どれもデフォルト設定では見た目が似たりよったりに見えちゃって、その点ちょっと残念です．
+開発の活発さやいじりやすさから見るとAtomが良いのでしょうか．
+ただ，個人的にはLightTableのClojureで拡張可能というのが非常に素敵な響きなので迷う所です．
+
+あと,全体的に拙い和訳なのはご容赦下さい...
