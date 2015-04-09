@@ -4,7 +4,7 @@ date: 2015-04-09 18:27 JST
 tags: GNU/Linux,Arch,KVM 
 category: linux
 ---
-(Linux From Scrach)[http://www.linuxfromscratch.org/]というプロジェクトがあります.
+[Linux From Scrach](http://www.linuxfromscratch.org/)というプロジェクトがあります.
 「最小構成のLinuxを全ソースコンパイルしながら構築しよう」という非常に興味深いやつです.
 こいつの完走を密かに今年の目標の1つと立てています。
 
