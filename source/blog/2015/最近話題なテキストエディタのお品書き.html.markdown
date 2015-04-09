@@ -77,7 +77,7 @@ Node.jsも組み込まれているようで，WebkitとNodeのAPIを使ってプ
 <tbody>
 <tr><td> 最新版リリース日 </td><td> 2015/02/19 (v1.2) </td></tr>
 <tr><td> ライセンス </td><td> https://github.com/adobe/brackets/blob/master/LICENSE </td></tr>
-<tr><td> プラグイン作成言語 </td><td> Python3 </td></tr>
+<tr><td> プラグイン作成言語 </td><td> JavaScript </td></tr>
 <tr><td> URL </td><td> http://brackets.io/ </td></tr>
 </tbody>
 </table>
