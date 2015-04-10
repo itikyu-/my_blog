@@ -1,7 +1,7 @@
 ---
 title: LinuxのKVMを利用したハイパーバイザー環境を作成
 date: 2015-04-09 18:27 JST
-tags: GNU/Linux,Arch,KVM 
+tags: GNU/Linux,Arch Linux,KVM,Linux From Scratch
 category: linux
 ---
 [Linux From Scrach](http://www.linuxfromscratch.org/)というプロジェクトがあります.
