@@ -14,7 +14,7 @@
     <script src="/javascripts/syntaxHighlighter/shCore.js"></script>
     <script src="/javascripts/syntaxHighlighter/shAutoloader.js"></script>
     <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
-    <title><%=  current_article.title + ' - ' unless current_article.nil? %>記してみた</title>
+    <title><%=  current_article.title + ' - ' unless current_article.nil? %>Computing Record</title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
   </head>
   <body >
@@ -22,7 +22,7 @@
     <header id="top">
       <div class="content-width" >
       <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal ">
-        <a class="pure-menu-heading" href="/"><h1>記してみた</h1></a>
+        <a class="pure-menu-heading" href="/"><h1>Computing Record</h1></a>
 
         <ul>
           <li><a href="/">Blog</a></li>
