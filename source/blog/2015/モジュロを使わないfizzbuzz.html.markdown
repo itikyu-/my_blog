@@ -1,5 +1,5 @@
 ---
-title: 剰余演算子を使わないFizzBuzz(+Gist埋め込みのテスト)
+title: 剰余演算子を使わないFizzBuzz
 date: 2015-04-29 17:20 JST
 tags: Ruby
 category: Ruby
